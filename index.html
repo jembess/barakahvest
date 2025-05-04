@@ -29,15 +29,27 @@
   <!-- CTA -->
   <section class="cta">
     <h2>Siap memulai perjalanan keuanganmu?</h2>
-    <a href="quiz.html">
-      <button>Gabung Sekarang</button>
-    </a>
+
+    <form id="userForm">
+      <label for="nama">Nama:</label><br>
+      <input type="text" id="nama" name="nama"><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+
+      <input type="submit" value="Gabung Sekarang">
+    </form>
+
+    <div id="ucapanSelamat" class="result-box"></div>
   </section>
+
 
   <!-- Footer -->
   <footer>
     &copy; 2025 BarakahVest. Semua hak dilindungi.
   </footer>
+
+  <script src="script.js" defer></script>
 
 </body>
 
