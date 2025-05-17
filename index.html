@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BarakahVest – Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <header class="navbar">
+    <div class="logo">BarakahVest</div>
+    <nav class="nav-links">
+      <a href="index.html">Beranda</a>
+      <a href="quiz.html">Kuis</a>
+      <a href="about.html">Tentang Kami</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>BarakahVest</h1>
+    <p>Robo-advisor Syariah untuk Masa Depan Keuanganmu</p>
+    <button onclick="location.href='quiz.html'">Mulai Kuis</button>
+  </section>
+
+  <section class="features">
+    <div class="feature-box">✅ Investasi Syariah</div>
+    <div class="feature-box">📊 Rekomendasi Otomatis</div>
+    <div class="feature-box">🛡️ Aman & Transparan</div>
+  </section>
+
+  <section class="cta">
+    <h2>Siap memulai perjalanan keuanganmu?</h2>
+    
+    <form id="userForm">
+      <label for="nama">Nama:</label><br>
+      <input type="text" id="nama" name="nama" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <input type="submit" value="Gabung Sekarang">
+
+    
+    </form>
+    
+  </section>
+
+  <div id="ucapanSelamat" class="result-box"></div>
+
+  <footer>
+    &copy; 2025 BarakahVest | <a href="about.html">Tentang Kami</a>
+  </footer>
+
+  <script src="script.js" defer></script>
+
+  
+</body>
+</html>

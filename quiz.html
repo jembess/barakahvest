@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kuis Profil Risiko</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .quiz-container {
+      max-width: 600px;
+      margin: 60px auto;
+      background-color: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .quiz-container h2 {
+      text-align: center;
+      color: #047857;
+      margin-bottom: 30px;
+    }
+
+    .quiz-group {
+      margin-bottom: 25px;
+    }
+
+    .quiz-group label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #374151;
+    }
+
+    .quiz-group input {
+      margin-right: 10px;
+    }
+
+    .quiz-container button {
+      display: block;
+      margin: 0 auto;
+      background-color: #10b981;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .quiz-container button:hover {
+      background-color: #059669;
+    }
+  </style>
+</head>
+
+  <header class="main-header">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="quiz.html">Kuis</a></li>
+        <li><a href="result.html">Hasil</a></li>
+        <li><a href="about.html">Tentang Kami</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<body>
+  <div class="quiz-container">
+    <h2>Kuis Profil Risiko</h2>
+    <form id="quizForm">
+      <div class="quiz-group">
+        <label>Berapa usia kamu?</label>
+        <input type="radio" name="usia" value="muda" required> &lt; 30 tahun<br>
+        <input type="radio" name="usia" value="dewasa"> 30 - 50 tahun<br>
+        <input type="radio" name="usia" value="tua"> &gt; 50 tahun
+      </div>
+
+      <div class="quiz-group">
+        <label>Seberapa besar toleransi kamu terhadap risiko?</label>
+        <input type="radio" name="risiko" value="rendah" required> Rendah<br>
+        <input type="radio" name="risiko" value="sedang"> Sedang<br>
+        <input type="radio" name="risiko" value="tinggi"> Tinggi
+      </div>
+
+      <button type="submit">Lihat Hasil</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
